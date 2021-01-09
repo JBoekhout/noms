@@ -74,7 +74,7 @@ class Client:
         if result == None:
             return None
         else:
-            return SearchResults(search_parse(self.call(params, '/search')))
+            return SearchResults(result)
     
     def food_query(self, ids):
         # allow for either a single id (ndbno) query, or a list of queries
